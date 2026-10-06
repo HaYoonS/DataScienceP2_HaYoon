@@ -1,0 +1,116 @@
+================================================================================
+AutoMPG
+Rows: 392
+R^2: 0.821478
+Adjusted R^2: 0.818224
+RMSE: 3.293551
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    mpg   R-squared:                       0.821
+Model:                            OLS   Adj. R-squared:                  0.818
+Method:                 Least Squares   F-statistic:                     252.4
+Date:                Mon, 05 Oct 2026   Prob (F-statistic):          2.04e-139
+Time:                        18:24:12   Log-Likelihood:                -1023.5
+No. Observations:                 392   AIC:                             2063.
+Df Residuals:                     384   BIC:                             2095.
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const          -17.2184      4.644     -3.707      0.000     -26.350      -8.087
+cylinders       -0.4934      0.323     -1.526      0.128      -1.129       0.142
+displacement     0.0199      0.008      2.647      0.008       0.005       0.035
+horsepower      -0.0170      0.014     -1.230      0.220      -0.044       0.010
+weight          -0.0065      0.001     -9.929      0.000      -0.008      -0.005
+acceleration     0.0806      0.099      0.815      0.415      -0.114       0.275
+model_year       0.7508      0.051     14.729      0.000       0.651       0.851
+origin           1.4261      0.278      5.127      0.000       0.879       1.973
+==============================================================================
+Omnibus:                       31.906   Durbin-Watson:                   1.309
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               53.100
+Skew:                           0.529   Prob(JB):                     2.95e-12
+Kurtosis:                       4.460   Cond. No.                     8.59e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.59e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+================================================================================
+Airfoil
+Rows: 1503
+R^2: 0.515710
+Adjusted R^2: 0.514092
+RMSE: 4.799244
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     scaled_sound_pressure   R-squared:                       0.516
+Model:                               OLS   Adj. R-squared:                  0.514
+Method:                    Least Squares   F-statistic:                     318.8
+Date:                   Mon, 05 Oct 2026   Prob (F-statistic):          1.15e-232
+Time:                           18:24:12   Log-Likelihood:                -4490.1
+No. Observations:                   1503   AIC:                             8992.
+Df Residuals:                       1497   BIC:                             9024.
+Df Model:                              5                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================================
+                                          coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------
+const                                 132.8338      0.545    243.866      0.000     131.765     133.902
+frequency                              -0.0013   4.21e-05    -30.452      0.000      -0.001      -0.001
+angle                                  -0.4219      0.039    -10.847      0.000      -0.498      -0.346
+chord_length                          -35.6880      1.630    -21.889      0.000     -38.886     -32.490
+free_stream_velocity                    0.0999      0.008     12.279      0.000       0.084       0.116
+suction_side_displacement_thickness  -147.3005     15.015     -9.810      0.000    -176.753    -117.848
+==============================================================================
+Omnibus:                       12.947   Durbin-Watson:                   0.447
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               19.228
+Skew:                          -0.020   Prob(JB):                     6.68e-05
+Kurtosis:                       3.553   Cond. No.                     5.18e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.18e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+================================================================================
+Concrete
+Rows: 1030
+R^2: 0.615465
+Adjusted R^2: 0.612452
+RMSE: 10.354313
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     compressive_strength   R-squared:                       0.615
+Model:                              OLS   Adj. R-squared:                  0.612
+Method:                   Least Squares   F-statistic:                     204.3
+Date:                  Mon, 05 Oct 2026   Prob (F-statistic):          6.76e-206
+Time:                          18:24:12   Log-Likelihood:                -3869.0
+No. Observations:                  1030   AIC:                             7756.
+Df Residuals:                      1021   BIC:                             7800.
+Df Model:                             8                                         
+Covariance Type:              nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const                -23.1638     26.588     -0.871      0.384     -75.338      29.010
+cement                 0.1198      0.008     14.110      0.000       0.103       0.136
+blast_furnace_slag     0.1038      0.010     10.245      0.000       0.084       0.124
+fly_ash                0.0879      0.013      6.988      0.000       0.063       0.113
+water                 -0.1503      0.040     -3.741      0.000      -0.229      -0.071
+superplasticizer       0.2907      0.093      3.110      0.002       0.107       0.474
+coarse_aggregate       0.0180      0.009      1.919      0.055      -0.000       0.036
+fine_aggregate         0.0202      0.011      1.883      0.060      -0.001       0.041
+age                    0.1142      0.005     21.046      0.000       0.104       0.125
+==============================================================================
+Omnibus:                        5.379   Durbin-Watson:                   1.281
+Prob(Omnibus):                  0.068   Jarque-Bera (JB):                5.305
+Skew:                          -0.174   Prob(JB):                       0.0705
+Kurtosis:                       3.045   Cond. No.                     1.06e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.06e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
